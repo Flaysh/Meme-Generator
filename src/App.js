@@ -21,9 +21,9 @@ export default class App extends Component {
   }
 
 
-  //todo - Fix the undefind problem
+
   nextMeme = () =>{
-    if(this.state.memes[Math.floor(Math.random() * 101)].url !== undefined)
+    if(this.state.memes !== undefined)
     this.setState({ memeUrl: this.state.memes[Math.floor(Math.random() * 101)].url });
   }
 
